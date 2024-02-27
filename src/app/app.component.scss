@@ -139,20 +139,6 @@ ion-icon[name="materiales"] {
   display: inline-block;
 }
 
-ion-icon[name="recursos"] {
-  background: url('/src/assets/icon/recursos.png') no-repeat center center;
-  background-size: contain;
-  display: inline-block;
-}
-
-ion-icon[name="armas"], ion-icon[name="artefactos"] {
-  background-size: cover;
-  width: 60px;
-  height: 60px;
-  display: inline-block;
-}
-
-
 ion-icon, .custom-icon {
   width: 35px;
   height: 35px;

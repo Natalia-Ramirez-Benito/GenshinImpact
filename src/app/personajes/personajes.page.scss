@@ -1,0 +1,36 @@
+ion-card-title, ion-card-subtitle {
+  font-size: 30px;
+  color: white;
+  font-weight: 650;
+  font-family: 'Tilt Warp', sans-serif;
+}
+
+p {
+  font-size: 20px;
+  font-family: 'Tilt Neon', sans-serif;
+}
+
+.container {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.row {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.form-control, .btn{
+  margin-top: 20px;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: center;
+}
+
+ion-card {
+  margin: 20px;
+}

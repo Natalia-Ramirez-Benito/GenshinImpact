@@ -4,7 +4,7 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'folder/Inbox',
+    redirectTo: 'inicio',
     pathMatch: 'full'
   },
   {
@@ -24,16 +24,8 @@ const routes: Routes = [
     loadChildren: () => import('./artefactos/artefactos.module').then( m => m.ArtefactosPageModule)
   },
   {
-    path: 'armas',
-    loadChildren: () => import('./armas/armas.module').then( m => m.ArmasPageModule)
-  },
-  {
     path: 'materiales',
     loadChildren: () => import('./materiales/materiales.module').then( m => m.MaterialesPageModule)
-  },
-  {
-    path: 'recursos',
-    loadChildren: () => import('./recursos/recursos.module').then( m => m.RecursosPageModule)
   }
 ];
 
