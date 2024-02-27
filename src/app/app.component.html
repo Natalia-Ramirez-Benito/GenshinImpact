@@ -1,0 +1,30 @@
+<ion-app>
+  <ion-split-pane contentId="main-content">
+    <ion-menu contentId="main-content" type="overlay">
+      <ion-content>
+        <ion-list id="inbox-list">
+          <ion-list-header>
+            <ion-img class="custom-img" src="assets/icon/small_icon.png" alt="Kazuha"/>
+          </ion-list-header>
+
+          <ion-list style="margin-left: 20px">
+            <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages; let i = index">
+              <ion-item routerDirection="root" [routerLink]="[p.url]" lines="none" detail="false" routerLinkActive="selected">
+                <ng-container *ngIf="p.useIonicIcon; else customIcon">
+                  <ion-icon slot="start" [name]="p.icon"></ion-icon>
+                </ng-container>
+                <ng-template #customIcon>
+                  <div class="custom-icon" [ngStyle]="{ 'background-image': 'url(\'./assets/icon/' + p.icon + '.png\')' }"></div>
+                </ng-template>
+                <ion-label>{{ p.title }}</ion-label>
+              </ion-item>
+            </ion-menu-toggle>
+          </ion-list>
+
+        </ion-list>
+
+      </ion-content>
+    </ion-menu>
+    <ion-router-outlet id="main-content"></ion-router-outlet>
+  </ion-split-pane>
+</ion-app>

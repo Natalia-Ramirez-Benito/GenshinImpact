@@ -1,0 +1,30 @@
+ion-grid{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+ion-card {
+  height: auto;
+  width: 800px;
+  margin-inside: 20px;
+  background: none;
+}
+
+ion-card-title {
+  font-size: 50px;
+  font-weight: 650;
+  font-family: 'Tilt Warp', sans-serif;
+}
+
+ion-card-content {
+  font-size: 20px;
+  font-family: 'Tilt Neon', sans-serif;
+}
+
+ion-img {
+  height: auto;
+  margin: 0 auto;
+  padding-top: 20px;
+}
